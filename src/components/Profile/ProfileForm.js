@@ -1,11 +1,13 @@
 /* eslint-disable no-useless-escape */
 import classes from './ProfileForm.module.css';
 import React,{useState,useContext} from 'react';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import AuthContext from '../../store/auth-context';
 import swal from 'sweetalert';
 
 const ProfileForm = () => {
+  const history=useHistory()
   const[newPassword,setNewPassword]=useState("")
   const[isLoading,setIsLoading]=useState(false)
   const[isError,setIsError]=useState(false)
@@ -57,6 +59,7 @@ const ProfileForm = () => {
             icon:"success",
             time:"1500",
           })
+          history.replace("/")
           authCtx.changePassword(newPassword)
         }
       })
