@@ -1,0 +1,9 @@
+.error {
+  text-align: center;
+  color: red;
+}
+
+.error img {
+  text-align: center;
+  width: 25%;
+}

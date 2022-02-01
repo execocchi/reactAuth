@@ -1,0 +1,24 @@
+.starting {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.starting h1 {
+  font-size: 5rem;
+}
+
+.link {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #38015c;
+  border: 1px solid #38015c;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #42006e;
+  border-color: #42006e;
+}
